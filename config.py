@@ -1,0 +1,2 @@
+TOKEN_VK = ''
+TOKEN_YA_DISK = ''
