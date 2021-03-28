@@ -38,6 +38,8 @@ class VkUser:
         if 'error' in res:
             if res['error']['error_code'] == 200:
                 sys.exit('Access denied!')
+        elif len(res['response']['items']) == 0:
+            sys.exit('Album is null!')
 
         #  получение url фотографий в макс. размере
         photo_url_dict = {}
